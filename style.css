@@ -168,7 +168,7 @@ button:active {
   margin-left: 0.5rem;
 }
 
-.list-item__main {
+.list-item__body {
   flex: 1;
   display: flex;
   order: 3;
