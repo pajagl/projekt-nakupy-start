@@ -3,7 +3,7 @@
  * ============
  */
 
-*, *:before, *:after {
+ *, *:before, *:after {
   box-sizing: border-box;
 }
 
@@ -47,10 +47,6 @@ footer {
   height: 4rem;
 }
 
-.footer__text {
-  text-align: center;
-}
-
 .brand {
   display: flex;
   align-items: center;
@@ -87,6 +83,28 @@ button:active {
   transform: scale(1);
 }
 
+.form-fields {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.field-input {
+  display: inline-block;
+  border: none;
+  border-bottom: 2px solid #f67e79;
+  background-color: transparent;
+}
+
+.field-input:focus {
+  border-bottom: 2px solid black;
+  outline: none;
+}
+
+.form-controls {
+  margin-top: 0.5rem;
+  text-align: right;
+}
+
 /* 
  * Shoplist
  * ============
@@ -109,12 +127,16 @@ button:active {
   margin: 0 0.5rem 1rem 0.5rem;
 }
 
+.shoplist__new {
+  margin-bottom: 1rem;
+}
+
 /* 
  * ListItem
  * ============
  */
 
- .list-item {
+.list-item {
   display: flex;
   flex-wrap: wrap;
   background-color: white;
@@ -165,30 +187,8 @@ button:active {
   margin-top: 0.5rem;
 }
 
-.list-item__form-fields {
-  display: flex;
-  gap: 0.25rem;
-}
-
-.list-item__form-controls {
-  margin-top: 0.5rem;
-  text-align: right;
-}
-
 .list-item--toolbar-on > .list-item__form {
   display: inline-block;
-}
-
-.field-input {
-  display: inline-block;
-  border: none;
-  border-bottom: 2px solid #bc7B77;
-  background-color: transparent;
-}
-
-.field-input:focus {
-  border-bottom: 2px solid black;
-  outline: none;
 }
 
 .product-input {
